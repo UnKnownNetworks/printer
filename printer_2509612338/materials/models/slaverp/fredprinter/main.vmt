@@ -1,0 +1,16 @@
+VertexLitGeneric
+{
+	$basetexture			"models/slaverp/fredprinter/main_a"
+	$color2					"[1.4 1.4 1.4]"
+	$bumpmap				"models/slaverp/fredprinter/main_n"
+	$translucent			1
+	
+	$phong					1
+	$phongexponent			7
+	$phongboost				1.5
+	$phongfresnelranges		"[1 0.5 0.1]"
+	$phongtint				"[1 1 1]"
+	
+	$rimlight				1
+	$rimlightboost			0.2
+}

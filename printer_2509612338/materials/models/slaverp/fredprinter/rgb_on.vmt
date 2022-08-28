@@ -1,0 +1,19 @@
+UnlitGeneric
+{
+	$basetexture		"models/slaverp/fredprinter/rgb"
+	
+	$detail				"models/slaverp/fredprinter/rgb_detail"
+	$detailscale		384
+	$detailblendmode 	1
+	$detailblendfactor	1
+	
+	Proxies
+	{
+		TextureScroll
+		{
+			texturescrollvar		$basetexturetransform
+			texturescrollrate		0.3
+			texturescrollangle		0
+		}
+	}
+}

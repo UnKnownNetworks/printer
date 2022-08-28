@@ -1,0 +1,38 @@
+VertexLitGeneric
+{
+	$basetexture	"models/slaverp/fredprinter/unit_paper"
+	
+ "$gnoise" 1
+ "$temp" "[0 0]"
+ "$curr" 0.0
+ "Proxies"
+ {
+  "GaussianNoise"
+  {
+   "minVal" -0.00005
+   "maxVal" -0.0001
+    "mean" -.0002y
+   "halfwidth" .1
+   "resultVar" "$gnoise"
+  }
+ 
+  "Add"
+  {
+   "srcVar1" "$gnoise"
+   "srcVar2" "$curr"
+   "resultVar" "$curr"
+  }
+ 
+  "Equals"
+  {
+   "srcVar1" "$curr"
+   "resultVar" "$temp[1]"
+  }
+ 
+  "TextureTransform"
+  {
+   "translateVar" "$temp"
+   "resultVar" "$basetexturetransform"
+  }  
+ }
+}
